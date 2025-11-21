@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="spaHarmony_M2.SiteMaster" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Spa Harmony</title>
+    <link rel="stylesheet" href="/Content/style.css" />
+</head>
+
+<body>
+    <form runat="server">
+
+        <div class="header">
+            <h2>Spa Harmony</h2>
+           <nav>
+    <a href="/client/home.aspx">Home</a>
+    <a href="/client/login.aspx">Login</a>
+    <a href="/client/register.aspx">Register</a>
+    <a href="/client/services.aspx">Services</a>
+</nav>
+        </div>
+
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+
+        <div class="footer">
+            <p>© 2024 Spa Harmony</p>
+        </div>
+
+    </form>
+</body>
+</html>
+</html>
