@@ -1,4 +1,5 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="services.aspx.cs" Inherits="spaHarmony_M2.Client.services" %><html>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="services.aspx.cs" Inherits="spaHarmony_M2.Client.services" %>
+<html>
 <head runat="server">
     <title>Our Services</title>
     <link rel="stylesheet" href="/Content/style.css" />
@@ -18,14 +19,24 @@
             <div class="icon">🦶</div>
             <h2 class="service-title">Pedicure</h2>
             <p class="service-desc">Professional foot care and nail treatment</p>
-            <a href="/client/booking.aspx" class="main-btn">Book Now</a>
+
+            <asp:HyperLink ID="lnkBookPedicure"
+                NavigateUrl="~/client/BookAppointment.aspx?service=Pedicure"
+                CssClass="main-btn"
+                Text="Book Now"
+                runat="server" />
         </div>
 
         <div class="service-card">
             <div class="icon">💅</div>
             <h2 class="service-title">Manicure</h2>
             <p class="service-desc">Beautiful nail care and polish application</p>
-            <a href="/client/booking.aspx" class="main-btn">Book Now</a>
+
+            <asp:HyperLink ID="lnkBookManicure"
+                NavigateUrl="~/client/BookAppointment.aspx?service=Manicure"
+                CssClass="main-btn"
+                Text="Book Now"
+                runat="server" />
         </div>
 
     </div>

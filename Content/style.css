@@ -304,3 +304,157 @@
     margin-left: 40px;
     text-decoration: none;
 }
+/* Booking Appointment Page */
+
+.page-wrapper {
+    padding: 40px 0;
+}
+
+.page-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #b35b6b;
+}
+
+.page-subtitle {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.card {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #b35b6b;
+}
+
+.section-subtitle {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: 500;
+    }
+
+.input {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    padding: 10px 12px;
+    font-size: 14px;
+}
+
+.btn {
+    display: inline-block;
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    padding: 12px 0;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #c77883;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+    .btn:hover {
+        background-color: #b36673;
+    }
+
+/* My Appointments Table Styling */
+.appointment-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+}
+
+.appointment-header th {
+    background-color: #b35b6b;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 10px 10px 0 0;
+    text-align: left;
+}
+
+.appointment-row td {
+    background-color: white;
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    font-size: 15px;
+}
+
+    .appointment-row td:first-child {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .appointment-row td:last-child {
+        border-radius: 0 10px 10px 0;
+    }
+
+/* Center the whole card */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 700px;
+    margin: auto;
+}
+
+.appointment-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 18px;
+}
+
+    .appointment-table th {
+        background: #d48a9c;
+        color: white;
+        padding: 12px;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .appointment-table td {
+        padding: 15px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .appointment-table tr:last-child td {
+        border-bottom: none;
+    }
+
+.cancel-btn {
+    background: #ff6b6b;
+    color: white !important;
+    padding: 8px 15px;
+    border-radius: 8px;
+    border: none;
+}
+
+    .cancel-btn:hover {
+        background: #d9534f;
+    }

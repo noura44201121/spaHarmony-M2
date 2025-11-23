@@ -17,6 +17,7 @@
     <a href="/client/login.aspx">Login</a>
     <a href="/client/register.aspx">Register</a>
     <a href="/client/services.aspx">Services</a>
+    <a href="/client/MyAppointments.aspx">My Appointments</a>
 </nav>
         </div>
 
