@@ -112,8 +112,8 @@
     <Content Include="client\home.aspx" />
     <Content Include="client\login.aspx" />
     <Content Include="client\MyAppointments.aspx" />
-    <Content Include="client\register.aspx" />
     <Content Include="client\services.aspx" />
+    <Content Include="client\register.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -256,19 +256,19 @@
     <Compile Include="client\MyAppointments.aspx.designer.cs">
       <DependentUpon>MyAppointments.aspx</DependentUpon>
     </Compile>
-    <Compile Include="client\register.aspx.cs">
-      <DependentUpon>register.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="client\register.aspx.designer.cs">
-      <DependentUpon>register.aspx</DependentUpon>
-    </Compile>
     <Compile Include="client\services.aspx.cs">
       <DependentUpon>services.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="client\services.aspx.designer.cs">
       <DependentUpon>services.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="client\register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="client\register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>

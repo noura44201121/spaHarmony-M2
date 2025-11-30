@@ -1,33 +1,37 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="register.aspx.cs" Inherits="spaHarmony_M2.Client.register" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master"
+    AutoEventWireup="true" CodeBehind="register.aspx.cs"
+    Inherits="spaHarmony_M2.Client.register" %>
 
-<!DOCTYPE html>
-<html>
-<head runat="server">
-    <title>Client Register</title>
-    <link rel="stylesheet" href="/Content/style.css" />
-</head>
-<body class="page-wrapper">
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    <form id="form1" runat="server">
+    <h2 class="page-title">Client Register</h2>
 
-        <a href="/client/home.aspx" class="back-link">← Back to Home</a>
+    <asp:Label ID="lblMessage" runat="server" ForeColor="Red"></asp:Label>
 
-        <div class="card login-card">
+    <div class="form-group">
+        <asp:Label runat="server" Text="Name"></asp:Label>
+        <asp:TextBox ID="txtName" runat="server" CssClass="input"></asp:TextBox>
+        <asp:RequiredFieldValidator ControlToValidate="txtName" runat="server" ErrorMessage="Required" ForeColor="Red" />
+    </div>
 
-            <h1 class="title">Create Account</h1>
-            <p class="subtitle">Fill the form to continue</p>
+    <div class="form-group">
+        <asp:Label runat="server" Text="Username"></asp:Label>
+        <asp:TextBox ID="txtUsername" runat="server" CssClass="input"></asp:TextBox>
+        <asp:RequiredFieldValidator ControlToValidate="txtUsername" runat="server" ErrorMessage="Required" ForeColor="Red"/>
+    </div>
 
-            <asp:TextBox ID="txtUsername" runat="server" CssClass="input-field" placeholder="Enter your username"></asp:TextBox>
-            <asp:TextBox ID="txtPassword" runat="server" CssClass="input-field" TextMode="Password" placeholder="Enter your password"></asp:TextBox>
+    <div class="form-group">
+        <asp:Label runat="server" Text="Password"></asp:Label>
+        <asp:TextBox ID="txtPassword" runat="server" CssClass="input" TextMode="Password"></asp:TextBox>
+        <asp:RequiredFieldValidator ControlToValidate="txtPassword" runat="server" ErrorMessage="Required" ForeColor="Red"/>
+    </div>
 
-            <asp:Button ID="btnRegister" runat="server" CssClass="main-btn" Text="Sign Up" />
+    <div class="form-group">
+        <asp:Label runat="server" Text="Confirm Password"></asp:Label>
+        <asp:TextBox ID="txtConfirm" runat="server" CssClass="input" TextMode="Password"></asp:TextBox>
+        <asp:CompareValidator runat="server" ControlToValidate="txtConfirm" ControlToCompare="txtPassword" ErrorMessage="Passwords do not match" ForeColor="Red"/>
+    </div>
 
-            <p class="footer">
-                Already have an account?
-                <a href="/client/login.aspx">Login</a>
-            </p>
-        </div>
+    <asp:Button ID="btnRegister" runat="server" Text="Sign Up" CssClass="btn" OnClick="btnRegister_Click" />
 
-    </form>
-</body>
-</html>
+</asp:Content>
