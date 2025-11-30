@@ -16,7 +16,7 @@ namespace spaHarmony_M2.Admin
             string user = txtAdminUser.Text.Trim();
             string pass = txtAdminPass.Text.Trim();
 
-            string cs = ConfigurationManager.ConnectionStrings["spaHarmonyDB"].ConnectionString;
+            string cs = ConfigurationManager.ConnectionStrings["SpaConn"].ConnectionString;
 
             using (SqlConnection con = new SqlConnection(cs))
             {
@@ -26,7 +26,7 @@ namespace spaHarmony_M2.Admin
                 cmd.Parameters.AddWithValue("@pass", pass);
 
                 con.Open();
-                int count = (int)cmd.ExecuteScalar();   
+                int count = (int)cmd.ExecuteScalar();
                 con.Close();
 
                 if (count == 1)

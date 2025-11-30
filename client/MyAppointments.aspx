@@ -12,7 +12,7 @@
 
         <div class="card" style="max-width:800px; margin:auto; padding:30px; background:#fff; border-radius:20px;">
 
-            <!-- حالة ما فيه مواعيد -->
+            
             <asp:Panel ID="pnlEmpty" runat="server" Visible="false">
                 <div style="text-align:center; padding:40px 20px;">
                     <div style="font-size:48px; margin-bottom:15px;">📅</div>
@@ -30,7 +30,7 @@
                 </div>
             </asp:Panel>
 
-            <!-- حالة فيه مواعيد -->
+            
             <asp:Panel ID="pnlAppointments" runat="server" Visible="false">
                 <asp:GridView ID="gvAppointments"
                               runat="server"
