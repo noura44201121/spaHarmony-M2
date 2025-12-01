@@ -11,15 +11,40 @@
     <form runat="server">
 
         <div class="header">
-            <h2>Spa Harmony</h2>
-           <nav>
-    <a href="/client/home.aspx">Home</a>
-    <a href="/client/login.aspx">Login</a>
-    <a href="/client/register.aspx">Register</a>
-    <a href="/client/services.aspx">Services</a>
-    <a href="/client/MyAppointments.aspx">My Appointments</a>
-</nav>
-        </div>
+    <h2>Spa Harmony</h2>
+
+    <nav>
+        <asp:PlaceHolder ID="phGuest" runat="server">
+            <a href="/Default.aspx">Home</a>
+            <a href="/About.aspx">About</a>
+            <a href="/client/services.aspx">Services</a>
+            <a href="/client/MyAppointments.aspx">My Appointments</a>
+        </asp:PlaceHolder>
+
+        <asp:PlaceHolder ID="phClient" runat="server">
+            <a href="/Default.aspx">Home</a>
+            <a href="/About.aspx">About</a>
+            <a href="/client/services.aspx">Services</a>
+            <a href="/client/MyAppointments.aspx">My Appointments</a>
+            <asp:Button ID="btnLogoutClient" runat="server"
+                Text="Logout"
+                CssClass="btn-logout"
+                OnClick="btnLogout_Click" />
+        </asp:PlaceHolder>
+
+        <asp:PlaceHolder ID="phAdmin" runat="server">
+            <a href="/Default.aspx">Home</a>
+            <a href="/About.aspx">About</a>
+            <a href="/Admin/AdminDashboard.aspx">Dashboard</a>
+            <asp:Button ID="btnLogout" runat="server"
+                Text="Logout"
+                CssClass="btn-logout"
+                OnClick="btnLogout_Click" />
+        </asp:PlaceHolder>
+    </nav>
+</div>
+
+
 
         <asp:ContentPlaceHolder ID="MainContent" runat="server" />
 
@@ -29,5 +54,4 @@
 
     </form>
 </body>
-</html>
 </html>

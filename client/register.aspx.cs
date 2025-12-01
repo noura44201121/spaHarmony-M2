@@ -12,13 +12,13 @@ namespace spaHarmony_M2.Client
 
         protected void btnRegister_Click(object sender, EventArgs e)
         {
-            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["SpaHarmonyConn"].ConnectionString))
+            using (SqlConnection con = new SqlConnection(
+                ConfigurationManager.ConnectionStrings["SpaConn"].ConnectionString))
             {
-                string query = "INSERT INTO Users (Name, Username, Password, Role) VALUES (@n, @u, @p, 'client')";
+                string query = "INSERT INTO Users (Name, Password, Role) VALUES (@n, @p, 'client')";
 
                 SqlCommand cmd = new SqlCommand(query, con);
-                cmd.Parameters.AddWithValue("@n", txtName.Text);
-                cmd.Parameters.AddWithValue("@u", txtUsername.Text);
+                cmd.Parameters.AddWithValue("@n", txtUsername.Text);
                 cmd.Parameters.AddWithValue("@p", txtPassword.Text);
 
                 con.Open();

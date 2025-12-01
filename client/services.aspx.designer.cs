@@ -13,23 +13,5 @@ namespace spaHarmony_M2.Client
 
     public partial class services
     {
-
-        /// <summary>
-        /// lnkBookPedicure control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink lnkBookPedicure;
-
-        /// <summary>
-        /// lnkBookManicure control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink lnkBookManicure;
     }
 }
